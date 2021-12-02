@@ -1,0 +1,28 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" id="line-color">
+    <circle cx="12.5" cy="12.5" r="12" stroke="#B9B9B9"></circle>
+    <rect x="3.55859" y="20.5876" width="24.0473" height="1" transform="rotate(-45 3.55859 20.5876)" fill="#B9B9B9"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 27" id="form-6">
+    <path d="M13.0928 3.90288L14.595 1.30096L15.2779 1.69519L15.3462 1.57692L15.4144 1.69519L16.0973 1.30096L17.5995 3.90288L16.9167 4.29711L18.4189 6.89904L19.1017 6.50481L20.6039 9.10673L19.9211 9.50096L21.4233 12.1029L22.1061 11.7087L23.6084 14.3106L22.9255 14.7048L24.4278 17.3067L25.1106 16.9125L26.6128 19.5144L25.93 19.9087L27.4322 22.5106L28.115 22.1163L29.6173 24.7183L28.9344 25.1125L29.0027 25.2308H28.8661V26.0192H25.8617V25.2308H22.8573V26.0192H19.8528V25.2308H16.8484V26.0192H13.8439V25.2308H10.8395V26.0192H7.83505V25.2308H4.83061V26.0192H1.82616V25.2308H1.6896L1.75788 25.1125L1.07505 24.7183L2.57728 22.1163L3.2601 22.5106L4.76232 19.9087L4.0795 19.5144L5.58172 16.9125L6.26455 17.3067L7.76677 14.7048L7.08394 14.3106L8.58616 11.7087L9.26899 12.1029L10.7712 9.50096L10.0884 9.10673L11.5906 6.50481L12.2734 6.89904L13.7757 4.29711L13.0928 3.90288Z" stroke="white" stroke-width="1.57692" stroke-dasharray="3.15 3.15"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 27" id="form-5">
+    <path d="M1.6896 25.2308L15.3462 1.57692L29.0027 25.2308H1.6896Z" stroke="white" stroke-width="1.57692"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="form-4">
+    <circle cx="14" cy="14" r="13.2115" stroke="white" stroke-width="1.57692" stroke-dasharray="3.15 3.15"></circle>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="form-3">
+    <circle cx="14" cy="14" r="13.2115" stroke="white" stroke-width="1.57692"></circle>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" id="form-2">
+    <rect x="0.788462" y="0.788462" width="34.4231" height="22.4231" stroke="white" stroke-width="1.57692" stroke-dasharray="3.15 3.15"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" id="form-1">
+    <rect x="0.788462" y="0.788462" width="34.4231" height="22.4231" stroke="white" stroke-width="1.57692"></rect>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 12" id="form-strel-return">
+    <path d="M8 5.11168C7.5094 5.11168 7.11168 5.5094 7.11168 6C7.11168 6.4906 7.5094 6.88832 8 6.88832V5.11168ZM24.5243 6L15.6411 0.87129V11.1287L24.5243 6ZM8 6.88832H16.5294V5.11168H8V6.88832Z" fill="white"></path>
+    <path d="M16.5244 6.88832C17.015 6.88832 17.4127 6.4906 17.4127 6C17.4127 5.5094 17.015 5.11168 16.5244 5.11168L16.5244 6.88832ZM0.000152588 6L8.88334 11.1287L8.88334 0.871289L0.000152588 6ZM16.5244 5.11168L7.99502 5.11168L7.99502 6.88832L16.5244 6.88832L16.5244 5.11168Z" fill="white"></path>
+  </symbol>
+</svg>

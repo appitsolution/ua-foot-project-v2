@@ -1,0 +1,343 @@
+body {
+  background-image: url("../../images/photos/footbal.png");
+  background-position: center;
+}
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 55px;
+}
+.header-title {
+  width: 228px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 250ms linear;
+  &:hover {
+    color: #f4b400;
+  }
+}
+.header-lang {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px 17px;
+}
+.header-lang-thoomb {
+  position: relative;
+  cursor: pointer;
+}
+.header-lang-select {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.lang-select {
+  display: flex;
+  flex-direction: column;
+  transition: opacity 250ms linear;
+}
+.lang-select-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid #6fb2f4;
+    padding-bottom: 16px;
+  }
+  &:not(:first-child) {
+    padding-top: 16px;
+  }
+  &.close-lang {
+    border: none;
+    padding-bottom: 0;
+    &:not(:first-child) {
+      display: none;
+    }
+    & .lang-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+.lang-select-button {
+  appearance: none;
+  background: none;
+  border: none;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 250ms linear;
+  &:hover {
+    color: #f4b400;
+  }
+}
+.lang-icon {
+  margin-left: 5px;
+  width: 6px;
+  height: 4px;
+  transition: all 250ms linear;
+}
+.content {
+  margin-top: 26px;
+  padding: 56px 48px 48px 48px;
+  background: #272727;
+  box-shadow: 0px 4px 74px -30px rgba(84, 169, 255, 0.7);
+  border-radius: 24px;
+  max-width: 636px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.content-title {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.form-link {
+  display: flex;
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 4px;
+  padding-left: 28px;
+  margin-top: 48px;
+}
+.form-text {
+  appearance: none;
+  border: none;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-family: RF Dewi Extended;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #788693;
+    opacity: 0.8;
+  }
+}
+.form-button {
+  appearance: none;
+  border: 2px solid transparent;
+  background: #0a84ff;
+  border-radius: 10px;
+  padding: 28px 48px;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 250ms linear;
+  &:hover {
+    background: #ffffff;
+    color: #0a84ff;
+    border: 2px solid #0a84ff;
+  }
+  &:hover .form-button-icon {
+    fill: #0a84ff;
+  }
+}
+.form-button-icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  fill: white;
+  transition: fill 250ms linear;
+}
+.download-list {
+  display: flex;
+  margin-top: 24px;
+}
+.pc-download {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: #1d1d1d;
+  border-radius: 12px;
+  transition: background 250ms linear;
+  &:hover {
+    background: #0a84ff;
+  }
+}
+.pc-download-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 26px 40px 22px 40px;
+  &:hover .pc-download-text {
+    color: #ffffff;
+  }
+  &:hover .pc-download-icon {
+    stroke: #ffffff;
+    fill: #ffffff;
+  }
+}
+.pc-download-icon {
+  stroke: #8d8e8e;
+  width: 23px;
+  height: 23px;
+  transition: stroke 250ms linear;
+}
+.pc-download-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 184px;
+  color: #8d8e8e;
+  transition: color 250ms linear;
+}
+
+.pc-download-input {
+  display: none;
+}
+.login-youtube {
+  display: flex;
+  width: 100%;
+  margin-left: 12px;
+  flex-direction: column;
+  background: #1d1d1d;
+  border-radius: 12px;
+  transition: background 250ms linear;
+  &:hover {
+    background: #0a84ff;
+  }
+}
+.login-youtube-button {
+  appearance: none;
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 40px 22px 40px;
+  justify-content: center;
+  align-items: center;
+  &:hover .login-youtube-text {
+    color: #ffffff;
+  }
+  &:hover .login-youtube-icon {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+}
+.login-youtube-icon {
+  stroke: #8d8e8e;
+  fill: #8d8e8e;
+  width: 24px;
+  height: 25px;
+  transition: all 250ms linear;
+}
+.login-youtube-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8d8e8e;
+  width: 184px;
+  margin-top: 15px;
+  transition: color 250ms linear;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 62px;
+}
+.footer-admin {
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.footer-by {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.footer-by-logo {
+  margin-left: 7px;
+}

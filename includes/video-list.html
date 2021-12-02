@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/main.css">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="cont">
+    <header class="head">
+        <ul class="head-list-button">
+        <li class="head-list-button-item">
+          <button class="head-button link-youtube">
+            <svg class="head-icon">
+              <use href="../images/icon/sprite.svg#link"></use>
+            </svg>
+            <p class="head-button-download-text">
+              посилання на відео з Youtube
+            </p>
+          </button>
+          
+          <div class="head-button-toomb-link link-youtube button-close">
+            <!-- button-close-link -->
+            <button class="head-button-toomb-close">
+              <svg class="head-button-toomb-close-icon">
+                <use href="../images/icon/sprite.svg#close">
+                </use>
+              </svg>
+            </button>
+
+            <div class="head-button-toomb-block">
+              <input class="head-button-toomb-block-input" type="text" placeholder="Вставити посилання з YouTube сюди...">
+              <button class="head-button-toomb-block-search">
+                <p class="head-button-toomb-block-search-text">
+                  Вперед
+                </p>
+                <svg class="head-button-toomb-block-search-icon">
+                  <use href="../images/icon/sprite.svg#strelka-right">
+                  </use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="head-list-button-item">
+          <button class="head-button">
+            <svg class="head-icon">
+              <use href="../images/icon/sprite.svg#pc"></use>
+            </svg>
+            <p class="head-button-download-text">
+              Завантажити з комп'ютера
+            </p>
+          </button>
+        </li>
+        <li class="head-list-button-item">
+          <button class="head-button avatar">
+            <img class="head-avatar" src="../images/photos/ava.png" alt="">
+            <p class="head-avatar-text">Youtube-Акаунт</p>
+            <svg class="head-icon-exit">
+              <use href="../images/icon/sprite.svg#exit"></use>
+            </svg>
+          </button>
+        </li>
+        <li class="head-list-button-item">
+          <button class="head-button">
+            <svg class="head-icon-trash">
+              <use href="../images/icon/sprite.svg#trash"></use>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="header-lang slack">
+        <div class="header-lang-thoomb">
+          <span class="header-lang-span">
+            <p class="header-lang-select">ua</p>
+            <svg class="lang-icon">
+              <use href="../images/icon/sprite.svg#galka">
+              </use>
+            </svg>
+          </span>
+      
+          <ul class="lang-select">
+            <li class="lang-select-item">
+              <button class="lang-select-button">ua</button>
+            </li>
+            <li class="lang-select-item">
+              <button class="lang-select-button">ru</button>
+            </li>
+            <li class="lang-select-item">
+              <button class="lang-select-button">en</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content-video -->
+    <main class="block-video" id="tabs">
+      <ul class="block-video-menu">
+        <li class="video-menu-item">
+          <a href="#tabs-1" class="video-menu-button button1 active ">
+            Головна
+          </a>
+        </li>
+        <li class="video-menu-item">
+          <a href="#tabs-2" class="video-menu-button button2">
+            Відео
+          </a>
+        </li>
+        <li class="video-menu-item">
+          <a href="#tabs-3" class="video-menu-button button3">
+            Плейлісти
+          </a>
+        </li>
+      </ul>
+
+      <div class="video-list-block tabs1" id="tabs-1">
+        <ul class="video-list">
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+          
+          <li class="video-list-item">
+            <button class="button-iframe">
+              <div class="iframe-video">
+          
+                <div class="iframe-toomb">
+                  <p class="iframe-time">15:51</p>
+                </div>
+                <div class="iframe-go">
+                  <svg class="iframe-go-icon">
+                    <use href="../images/icon/sprite.svg#strelka-right"></use>
+                  </svg>
+                </div>
+          
+              </div>
+              <h2 class="iframe-title">
+                Зоря — Верес. Короткий огляд
+              </h2>
+              <ul class="iframe-stat">
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-see">
+                    11 тис. переглядів
+                  </p>
+                </li>
+                <li class="iframe-stat-item">
+                  <p class="iframe-text-time">
+                    1 годину назад
+                  </p>
+                </li>
+              </ul>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+      
+      <div id="tabs-2" class="tabs2">
+        <h1 style="color: green;">Тут что-то наверное будет</h1>
+      </div>
+
+        <div id="tabs-3" class="tabs3">
+          <h1 style="color: green;">А тут я не знаю, что будет </h1>
+        </div>
+    </main>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer-ln">
+      <ul class="footer-ln-list">
+        <li class="footer-ln-item">
+          <img class="footer-ln-gerb" src="../images/icon/gerb.svg" alt="gerb">
+          <p class="footer-ln-admin">
+            ЦЕНТР ЛІЦЕНЗУВАННЯ УКРАЇНСЬКОЇ АСОЦІАЦІЇ ФУТБОЛУ
+          </p>
+        </li>
+        <li class="footer-ln-item">
+          <p class="footer-ln-lic">
+            Ukraine Association of Football © 2021
+          </p>
+        </li>
+        <li class="footer-ln-item">
+          <p class="footer-ln-by">
+            Розроблено
+          </p>
+          <img class="footer-ln-logo" src="../images/icon/by-logo.svg">
+
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="../js/effect-video-list.js"></script>
+  <script src="../js/video-list-link.js"></script>
+  <script src="../js/index-lang.js"></script>
+</body>
+</html>

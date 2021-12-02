@@ -1,0 +1,147 @@
+.auth {
+  margin-top: 30px;
+}
+.login {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.login-input {
+  display: flex;
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #333333;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-family: RF Dewi Extended;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    color: #788693;
+  }
+}
+.login-text {
+  position: absolute;
+  top: 12px;
+  left: 29px;
+  display: none;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #788693;
+}
+.password {
+  display: flex;
+  position: relative;
+  margin-top: 12px;
+}
+.password-input {
+  display: flex;
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 28px;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #333333;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-family: RF Dewi Extended;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    color: #788693;
+  }
+}
+.password-text {
+  position: absolute;
+  top: 12px;
+  left: 29px;
+  display: none;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #788693;
+}
+.password-button {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+  &.active {
+    & .password-icon {
+      fill: #0a84ff;
+    }
+  }
+}
+.password-icon {
+  width: 13px;
+  height: 10px;
+  fill: #ccd0d5;
+  transition: fill 250ms linear;
+}
+.auth-button {
+  appearance: none;
+  border: none;
+  background: #0a84ff;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 12px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 250ms linear;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    background: #ffffff;
+    color: #0a84ff;
+    border: 2px solid #0a84ff;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
