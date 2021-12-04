@@ -1,11 +1,21 @@
 body {
-  background-image: url("../../images/photos/footbal.png");
-  background-position: center;
+  background-image: url("./../images/photos/footbal.png");
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
+
 .container {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .header {
   position: relative;
@@ -117,7 +127,7 @@ body {
   background: #272727;
   box-shadow: 0px 4px 74px -30px rgba(84, 169, 255, 0.7);
   border-radius: 24px;
-  max-width: 636px;
+  min-width: 636px;
   margin-right: auto;
   margin-left: auto;
 }

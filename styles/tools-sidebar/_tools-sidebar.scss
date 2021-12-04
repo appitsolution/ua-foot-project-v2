@@ -1,16 +1,17 @@
 .block-tools {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 112px;
 }
 .tools-1 {
-  // position: relative;
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: #272727;
   padding: 24px 16px;
-  height: 100%;
 }
 .tools-1-list {
   display: flex;
@@ -148,6 +149,12 @@
   align-items: center;
   text-transform: uppercase;
   color: #d2d2d2;
+  cursor: pointer;
+  transition: all 250ms linear;
+  &:hover {
+    color: #ffffff;
+    background: #0a84ff;
+  }
 }
 .tools-2-icon2 {
   width: 15px;
@@ -200,11 +207,19 @@
   border: none;
   background: none;
   cursor: pointer;
+  &:hover .tools-line-clear-icon {
+    fill: #0a84ff;
+  }
+  &:hover .tools-line-clear-text {
+    color: #0a84ff;
+  }
 }
 .tools-line-clear-icon {
   width: 15px;
   height: 15px;
   margin-right: 8px;
+  fill: #8d8e8e;
+  transition: fill 250ms linear;
 }
 .tools-line-clear-text {
   font-family: RF Dewi Extended;
@@ -215,16 +230,22 @@
   display: flex;
   align-items: center;
   color: #8d8e8e;
+  transition: color 250ms linear;
 }
 .tools-line-exit {
   appearance: none;
   border: none;
   background: none;
   cursor: pointer;
+  &:hover .tools-line-exit-icon {
+    fill: #0a84ff;
+  }
 }
 .tools-line-exit-icon {
   width: 12px;
   height: 12px;
+  fill: #8d8e8e;
+  transition: fill 250ms linear;
 }
 .tools-line-item-text {
   font-family: RF Dewi Extended;

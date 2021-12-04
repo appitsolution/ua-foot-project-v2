@@ -30,14 +30,21 @@ button {
 }
 
 body {
-  background-image: url("../../images/photos/footbal.png");
-  background-position: center;
+  background-image: url("./../images/photos/footbal.png");
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .container {
-  max-width: 1110px;
+  width: 1110px;
   margin: 0 auto;
   padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .header {
@@ -163,7 +170,7 @@ body {
   background: #272727;
   box-shadow: 0px 4px 74px -30px rgba(84, 169, 255, 0.7);
   border-radius: 24px;
-  max-width: 636px;
+  min-width: 636px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -575,6 +582,413 @@ body {
   border: 2px solid #0a84ff;
   box-sizing: border-box;
   border-radius: 10px;
+}
+
+.content-lection {
+  display: flex;
+  width: 100%;
+}
+
+.lection-forms {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.lection-section {
+  display: flex;
+}
+
+.lection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding-right: 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lection-form-info {
+  display: flex;
+  gap: 12px;
+}
+
+.lection-form-couch {
+  width: calc(70% - 12px);
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 28px;
+}
+
+.lection-form-couch::placeholder {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #788693;
+}
+
+.lection-form-couch:focus {
+  outline: none;
+}
+
+.lection-form-date {
+  appearance: none;
+  border: none;
+  width: 30%;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 28px;
+}
+
+.lection-form-date::placeholder {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #788693;
+}
+
+.lection-form-date:focus {
+  outline: none;
+}
+
+.lection-form-inventory,
+.lection-form-orientation,
+.lection-form-tasks {
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 28px;
+  resize: vertical;
+}
+
+.lection-form-inventory::placeholder,
+.lection-form-orientation::placeholder,
+.lection-form-tasks::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #788693;
+}
+
+.lection-form-inventory:focus,
+.lection-form-orientation:focus,
+.lection-form-tasks:focus {
+  outline: none;
+}
+
+.lection-buttons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 28px;
+}
+
+.lection-buttons-button {
+  appearance: none;
+  background: #0a84ff;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  padding: 14px 33px;
+  padding-right: 10;
+  cursor: pointer;
+  width: 100%;
+  transition: background 250ms linear;
+}
+
+.lection-buttons-button:hover {
+  background: #ffffff;
+}
+
+.lection-buttons-button:hover .lection-buttons-icon {
+  fill: #0a84ff;
+}
+
+.lection-buttons-button:hover .lection-buttons-text {
+  color: #0a84ff;
+}
+
+.lection-buttons-icon {
+  width: 20px;
+  height: 16px;
+  fill: #ffffff;
+  transition: fill 250ms linear;
+}
+
+.lection-buttons-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: color 250ms linear;
+}
+
+.lection-convas {
+  margin-top: 40px;
+}
+
+.lection-convas-list {
+  display: flex;
+  gap: 2px;
+}
+
+.lection-convas-item {
+  width: 185px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lection-convas-item:hover .lection-convas-button-list {
+  opacity: 1;
+}
+
+.lection-convas-button {
+  cursor: pointer;
+  width: 100%;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  padding: 16px 12px 16px 24px;
+}
+
+.lection-convas-button:hover .lection-convas-text {
+  color: #0a84ff;
+}
+
+.lection-convas-text {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #272727;
+  transition: color 250ms linear;
+}
+
+.lection-convas-button-list {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  gap: 2px;
+  transition: opacity 250ms linear;
+  transform: translateY(-50%);
+}
+
+.lection-convas-edit {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background: #bdc7d0;
+  border-radius: 3px;
+  padding: 3px 6px;
+  transition: background 250ms linear;
+}
+
+.lection-convas-edit:hover {
+  background: #0a84ff;
+}
+
+.lection-convas-icon {
+  width: 8px;
+  height: 8px;
+}
+
+.lection-convas-close {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background: #bdc7d0;
+  border-radius: 3px;
+  padding: 3px 6px;
+  transition: background 250ms linear;
+}
+
+.lection-convas-close:hover {
+  background: #0a84ff;
+}
+
+.lection-convas-section {
+  background: #ffffff;
+  border-radius: 0px 24px 24px 24px;
+  padding: 48px;
+}
+
+.lection-convas-section-content {
+  appearance: none;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #939ea8;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px;
+  resize: vertical;
+  height: 100%;
+}
+
+.lection-convas-section-content:focus {
+  outline: none;
+}
+
+.lection-convas-section-content::placeholder {
+  color: rgba(120, 134, 147, 0.8);
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.lection-convas-section-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.lection-convas-section-list-block {
+  display: flex;
+  gap: 2px;
+}
+
+.lection-convas-section-list-add {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 47px;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  cursor: pointer;
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  transition: background 250ms linear;
+}
+
+.lection-convas-section-list-add:hover {
+  background: #0a84ff;
+}
+
+.lection-convas-section-list-add:hover .lection-convas-section-list-add-icon2 {
+  opacity: 1;
+}
+
+.lection-convas-section-list-add:hover .lection-convas-section-list-add-icon {
+  opacity: 0;
+}
+
+.lection-convas-section-list-add-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms linear;
+}
+
+.lection-convas-section-list-add-icon2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms linear;
+}
+
+.lection-convas-section-button {
+  cursor: pointer;
+  background: #ffffff;
+  opacity: 0.2;
+  border: 3px solid #939ea8;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px 40px;
+  transition: all 250ms linear;
+}
+
+.lection-convas-section-button.active {
+  background: #ffffff;
+  border: 3px solid #0a84ff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.lection-convas-section-button:hover {
+  background: #ffffff;
+  border: 3px solid #0a84ff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.lection-convas-section-icon {
+  width: 114px;
+  height: 70px;
+  stroke: #939ea8;
+}
+
+.convas-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
+  height: 500px;
+}
+
+.convas-block-icon {
+  width: 100%;
+  height: 100%;
+  stroke: #0a84ff;
+  stroke-width: 0.2px;
+  transition: stroke 250ms linear;
 }
 
 .cont {
@@ -1174,18 +1588,20 @@ body {
 }
 
 .block-tools {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 112px;
 }
 
 .tools-1 {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: #272727;
   padding: 24px 16px;
-  height: 100%;
 }
 
 .tools-1-list {
@@ -1344,6 +1760,13 @@ body {
   align-items: center;
   text-transform: uppercase;
   color: #d2d2d2;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.tools-2-remove-button:hover {
+  color: #ffffff;
+  background: #0a84ff;
 }
 
 .tools-2-icon2 {
@@ -1402,10 +1825,20 @@ body {
   cursor: pointer;
 }
 
+.tools-line-clear:hover .tools-line-clear-icon {
+  fill: #0a84ff;
+}
+
+.tools-line-clear:hover .tools-line-clear-text {
+  color: #0a84ff;
+}
+
 .tools-line-clear-icon {
   width: 15px;
   height: 15px;
   margin-right: 8px;
+  fill: #8d8e8e;
+  transition: fill 250ms linear;
 }
 
 .tools-line-clear-text {
@@ -1417,6 +1850,7 @@ body {
   display: flex;
   align-items: center;
   color: #8d8e8e;
+  transition: color 250ms linear;
 }
 
 .tools-line-exit {
@@ -1426,9 +1860,15 @@ body {
   cursor: pointer;
 }
 
+.tools-line-exit:hover .tools-line-exit-icon {
+  fill: #0a84ff;
+}
+
 .tools-line-exit-icon {
   width: 12px;
   height: 12px;
+  fill: #8d8e8e;
+  transition: fill 250ms linear;
 }
 
 .tools-line-item-text {
