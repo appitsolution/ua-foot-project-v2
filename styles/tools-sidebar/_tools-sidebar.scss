@@ -1,5 +1,8 @@
 .block-tools {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -12,6 +15,7 @@
   flex-direction: column;
   background: #272727;
   padding: 24px 16px;
+  height: 100%;
 }
 .tools-1-list {
   display: flex;
@@ -178,14 +182,18 @@
 
 // TOOLS-LINE
 .tools-line {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  pointer-events: none;
+  transition: all 250ms linear;
 }
 .tools-line-list {
   display: flex;
@@ -232,12 +240,18 @@
   color: #8d8e8e;
   transition: color 250ms linear;
 }
-.tools-line-exit {
+.tools-line-exit,
+.tools-forms-button-close,
+.tools-text-button-close,
+.tools-graph-button-close {
   appearance: none;
   border: none;
   background: none;
   cursor: pointer;
   &:hover .tools-line-exit-icon {
+    fill: #0a84ff;
+  }
+  &:hover .tools-forms-button-close-icon {
     fill: #0a84ff;
   }
 }
@@ -450,14 +464,18 @@
 }
 // TOOLS-FORM
 .tools-forms {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 .tools-forms-list {
   display: flex;
@@ -810,27 +828,35 @@
 }
 // TOOLS-TEXTS
 .tools-texts {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 //----------------------
 
 // TOOLS-GRAPH
 .tools-graph {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 .tools-graph-list {
   display: flex;

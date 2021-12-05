@@ -32,7 +32,6 @@ button {
 body {
   background-image: url("./../images/photos/footbal.png");
   display: flex;
-  height: 100vh;
   background-repeat: no-repeat;
   object-fit: cover;
   background-size: cover;
@@ -40,6 +39,7 @@ body {
 
 .container {
   width: 1110px;
+  height: 100vh;
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
@@ -607,6 +607,7 @@ body {
 }
 
 .lection-forms {
+  margin-left: 112px;
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -1605,7 +1606,9 @@ body {
 }
 
 .block-tools {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1619,6 +1622,7 @@ body {
   flex-direction: column;
   background: #272727;
   padding: 24px 16px;
+  height: 100%;
 }
 
 .tools-1-list {
@@ -1808,14 +1812,18 @@ body {
 }
 
 .tools-line {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  pointer-events: none;
+  transition: all 250ms linear;
 }
 
 .tools-line-list {
@@ -1870,14 +1878,27 @@ body {
   transition: color 250ms linear;
 }
 
-.tools-line-exit {
+.tools-line-exit,
+.tools-forms-button-close,
+.tools-text-button-close,
+.tools-graph-button-close {
   appearance: none;
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.tools-line-exit:hover .tools-line-exit-icon {
+.tools-line-exit:hover .tools-line-exit-icon,
+.tools-forms-button-close:hover .tools-line-exit-icon,
+.tools-text-button-close:hover .tools-line-exit-icon,
+.tools-graph-button-close:hover .tools-line-exit-icon {
+  fill: #0a84ff;
+}
+
+.tools-line-exit:hover .tools-forms-button-close-icon,
+.tools-forms-button-close:hover .tools-forms-button-close-icon,
+.tools-text-button-close:hover .tools-forms-button-close-icon,
+.tools-graph-button-close:hover .tools-forms-button-close-icon {
   fill: #0a84ff;
 }
 
@@ -2123,14 +2144,18 @@ body {
 }
 
 .tools-forms {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-forms-list {
@@ -2535,25 +2560,33 @@ body {
 }
 
 .tools-texts {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-graph {
+  z-index: 10;
   position: absolute;
   top: 0;
   left: 100%;
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   background: #1d1d1d;
   width: 152px;
   height: 100%;
+  transition: opacity 250ms linear;
 }
 
 .tools-graph-list {
