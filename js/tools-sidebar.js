@@ -101,3 +101,25 @@ closeText.addEventListener("click", textClose);
 
 buttonGraph.addEventListener("click", graphOpen);
 closeGraph.addEventListener("click", graphClose);
+
+
+
+const mailComplate = document.querySelector(".lection-buttons-ok");
+const mail = document.querySelector("#mail-send");
+const backDrop = document.querySelector(".lection-buttons-button-backdrop")
+
+
+const animationMail = () => {
+  backDrop.classList.add("active");
+  setTimeout(() => {
+    mailComplate.classList.add("active");
+  },900)
+
+  setTimeout(() => {
+mailComplate.classList.remove("active");
+  }, 2000)
+  setTimeout(() => {
+backDrop.classList.remove("active");
+  }, 2000)
+}
+mail.addEventListener("click", animationMail);

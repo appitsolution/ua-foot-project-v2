@@ -123,6 +123,26 @@
     color: #ffffff;
   }
 }
+.tools-2-button-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #272727;
+  border-radius: 12px;
+  padding: 13px 16px;
+  cursor: pointer;
+  transition: background 250ms linear;
+  &:hover {
+    background: #0a84ff;
+  }
+  &:hover .tools-2-icon2 {
+    fill: #ffffff;
+  }
+  &:hover .tools-2-text {
+    color: #ffffff;
+  }
+}
 .tools-2-remove {
   display: none;
   position: absolute;
@@ -194,6 +214,10 @@
   height: 100%;
   pointer-events: none;
   transition: all 250ms linear;
+  &.open-line {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .tools-line-list {
   display: flex;
@@ -476,6 +500,10 @@
   width: 152px;
   height: 100%;
   transition: opacity 250ms linear;
+  &.open-forms {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .tools-forms-list {
   display: flex;
@@ -756,6 +784,9 @@
   &:hover {
     border: 2px solid #0a84ff;
   }
+  &.active {
+    border: 2px solid #0a84ff;
+  }
 }
 .tools-forms-list-form-icon {
   width: 28px;
@@ -821,6 +852,9 @@
   &:hover {
     border: 2px solid #0a84ff;
   }
+  &.active {
+    border: 2px solid #0a84ff;
+  }
 }
 .tools-line-select-icon {
   width: 30px;
@@ -840,6 +874,10 @@
   width: 152px;
   height: 100%;
   transition: opacity 250ms linear;
+  &.open-texts {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 //----------------------
 
@@ -857,6 +895,10 @@
   width: 152px;
   height: 100%;
   transition: opacity 250ms linear;
+  &.open-graph {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 .tools-graph-list {
   display: flex;
@@ -881,6 +923,9 @@
   border: 2px solid transparent;
   cursor: pointer;
   &:hover {
+    border: 2px solid #0a84ff;
+  }
+  &.active {
     border: 2px solid #0a84ff;
   }
 }

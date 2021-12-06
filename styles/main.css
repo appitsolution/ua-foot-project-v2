@@ -721,6 +721,7 @@ body {
 }
 
 .lection-buttons-button {
+  position: relative;
   appearance: none;
   background: #0a84ff;
   border: 3px solid #ffffff;
@@ -730,10 +731,11 @@ body {
   gap: 23px;
   align-items: center;
   padding: 14px 33px;
-  padding-right: 10;
   cursor: pointer;
   width: 100%;
-  transition: background 250ms linear;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 250ms linear;
 }
 
 .lection-buttons-button:hover {
@@ -746,6 +748,60 @@ body {
 
 .lection-buttons-button:hover .lection-buttons-text {
   color: #0a84ff;
+}
+
+.lection-buttons-button-backdrop {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: 110%;
+  width: 0;
+  background: #ffffff;
+}
+
+.lection-buttons-button-backdrop.active {
+  width: 105%;
+  transition: width 800ms linear;
+}
+
+.lection-buttons-ok {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+  background: #25cd09;
+  border-radius: 12px;
+  padding: 22px 0;
+  border: 3px solid #25cd09;
+  transition: opacity 300ms linear;
+}
+
+.lection-buttons-ok.active {
+  opacity: 1;
+}
+
+.lection-buttons-text-ok {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.lection-buttons-ok-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 27px;
 }
 
 .lection-buttons-icon {
@@ -1007,6 +1063,78 @@ body {
   stroke: #0a84ff;
   stroke-width: 0.2px;
   transition: stroke 250ms linear;
+}
+
+.lection-convas-pages-navigation {
+  display: none;
+}
+
+.lection-convas-pages-back {
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  padding: 19px 9px;
+  border-radius: 8px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 250ms linear;
+}
+
+.lection-convas-pages-back:hover {
+  background: #0a84ff;
+}
+
+.lection-convas-pages-back:hover .lection-convas-icon-back {
+  fill: #ffffff;
+}
+
+.lection-convas-icon-back {
+  width: 11px;
+  height: 9px;
+  fill: #0a84ff;
+  transition: fill 250ms linear;
+}
+
+.lection-convas-pages-next {
+  position: relative;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  padding: 19px 9px;
+  border-radius: 0px 8px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 250ms linear;
+}
+
+.lection-convas-pages-next:hover {
+  background: #0a84ff;
+}
+
+.lection-convas-pages-next:hover .lection-convas-icon-next {
+  fill: #ffffff;
+}
+
+.lection-convas-pages-next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #d8e1ec;
+}
+
+.lection-convas-icon-next {
+  width: 11px;
+  height: 9px;
+  fill: #0a84ff;
+  transform: rotate(-180deg);
+  transition: fill 250ms linear;
 }
 
 .cont {
@@ -1609,6 +1737,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -1749,6 +1878,30 @@ body {
   color: #ffffff;
 }
 
+.tools-2-button-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #272727;
+  border-radius: 12px;
+  padding: 13px 16px;
+  cursor: pointer;
+  transition: background 250ms linear;
+}
+
+.tools-2-button-link:hover {
+  background: #0a84ff;
+}
+
+.tools-2-button-link:hover .tools-2-icon2 {
+  fill: #ffffff;
+}
+
+.tools-2-button-link:hover .tools-2-text {
+  color: #ffffff;
+}
+
 .tools-2-remove {
   display: none;
   position: absolute;
@@ -1824,6 +1977,11 @@ body {
   height: 100%;
   pointer-events: none;
   transition: all 250ms linear;
+}
+
+.tools-line.open-line {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .tools-line-list {
@@ -2158,6 +2316,11 @@ body {
   transition: opacity 250ms linear;
 }
 
+.tools-forms.open-forms {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .tools-forms-list {
   display: flex;
   flex-direction: column;
@@ -2480,6 +2643,10 @@ body {
   border: 2px solid #0a84ff;
 }
 
+.tools-forms-line-form-button.active {
+  border: 2px solid #0a84ff;
+}
+
 .tools-forms-list-form-icon {
   width: 28px;
   height: 28px;
@@ -2554,6 +2721,10 @@ body {
   border: 2px solid #0a84ff;
 }
 
+.tools-line-select-button.active {
+  border: 2px solid #0a84ff;
+}
+
 .tools-line-select-icon {
   width: 30px;
   height: 30px;
@@ -2574,6 +2745,11 @@ body {
   transition: opacity 250ms linear;
 }
 
+.tools-texts.open-texts {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .tools-graph {
   z-index: 10;
   position: absolute;
@@ -2587,6 +2763,11 @@ body {
   width: 152px;
   height: 100%;
   transition: opacity 250ms linear;
+}
+
+.tools-graph.open-graph {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .tools-graph-list {
@@ -2619,8 +2800,78 @@ body {
   border: 2px solid #0a84ff;
 }
 
+.tools-graph-button.active {
+  border: 2px solid #0a84ff;
+}
+
 .tools-graph-icon {
   width: 30px;
   height: 30px;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 288px;
+    padding: 0;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: unset;
+    max-width: 288px;
+  }
+  .content-icon-mobile {
+    width: 75px;
+    height: 63px;
+    margin-top: 32px;
+  }
+  .content-text-mobile {
+    margin-top: 24px;
+    font-family: RF Dewi Extended;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 232px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 636px;
+    padding: 0 30px;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: unset;
+    max-width: 636px;
+  }
+  .content-icon-mobile {
+    width: 75px;
+    height: 63px;
+    margin-top: 32px;
+  }
+  .content-text-mobile {
+    margin-top: 24px;
+    font-family: RF Dewi Extended;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    max-width: 351px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

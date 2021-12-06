@@ -790,13 +790,24 @@
             </button>
           </li>
           <li class="lection-buttons-item">
-            <button class="lection-buttons-button">
+            <button class="lection-buttons-button" id="mail-send">
+              <div class="lection-buttons-button-backdrop">
+              </div>
               <svg class="lection-buttons-icon">
                 <use href="../images/icon/sprite.svg#mail"></use>
               </svg>
               <p class="lection-buttons-text">
                 ВІдправити на email викладачу
               </p>
+              <div class="lection-buttons-ok">
+                <svg class="lection-buttons-ok-icon">
+                  <use href="../images/icon/sprite.svg#ok">
+                  </use>
+                </svg>
+                <p class="lection-buttons-text-ok">
+                  Успішно відправлено
+                </p>
+              </div>
             </button>
           </li>
         </ul>
@@ -830,7 +841,20 @@
           </ul>
         </li>
       </ul>
-      
+      <div class="lection-convas-pages-navigation">
+        <button class="lection-convas-pages-back">
+          <svg class="lection-convas-icon-back">
+            <use href="../images/icon/sprite.svg#pages-navigation">
+            </use>
+          </svg>
+        </button>
+        <button class="lection-convas-pages-next">
+          <svg class="lection-convas-icon-next">
+            <use href="../images/icon/sprite.svg#pages-navigation">
+            </use>
+          </svg>
+        </button>
+      </div>
       <button class="lection-convas-section-list-add">
         <svg class="lection-convas-section-list-add-icon">
           <use href="../images/icon/sprite.svg#add-page"></use>

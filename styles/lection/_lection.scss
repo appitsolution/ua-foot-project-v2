@@ -100,6 +100,7 @@
   padding-left: 28px;
 }
 .lection-buttons-button {
+  position: relative;
   appearance: none;
   background: #0a84ff;
   border: 3px solid #ffffff;
@@ -109,10 +110,11 @@
   gap: 23px;
   align-items: center;
   padding: 14px 33px;
-  padding-right: 10;
   cursor: pointer;
   width: 100%;
-  transition: background 250ms linear;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 250ms linear;
   &:hover {
     background: #ffffff;
   }
@@ -122,6 +124,54 @@
   &:hover .lection-buttons-text {
     color: #0a84ff;
   }
+}
+.lection-buttons-button-backdrop {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  height: 110%;
+  width: 0;
+  background: #ffffff;
+  &.active {
+    width: 105%;
+    transition: width 800ms linear;
+  }
+}
+.lection-buttons-ok {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  align-items: center;
+  justify-content: center;
+  background: #25cd09;
+  border-radius: 12px;
+  padding: 22px 0;
+  border: 3px solid #25cd09;
+  transition: opacity 300ms linear;
+  &.active {
+    opacity: 1;
+  }
+}
+.lection-buttons-text-ok {
+  font-family: RF Dewi Extended;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.lection-buttons-ok-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 27px;
 }
 .lection-buttons-icon {
   width: 20px;
@@ -351,4 +401,67 @@
   stroke: #0a84ff;
   stroke-width: 0.2px;
   transition: stroke 250ms linear;
+}
+.lection-convas-pages-navigation {
+  // display: flex;
+  display: none;
+}
+.lection-convas-pages-back {
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  padding: 19px 9px;
+  border-radius: 8px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 250ms linear;
+  &:hover {
+    background: #0a84ff;
+  }
+  &:hover .lection-convas-icon-back {
+    fill: #ffffff;
+  }
+}
+.lection-convas-icon-back {
+  width: 11px;
+  height: 9px;
+  fill: #0a84ff;
+  transition: fill 250ms linear;
+}
+.lection-convas-pages-next {
+  position: relative;
+  appearance: none;
+  border: none;
+  background: #ffffff;
+  padding: 19px 9px;
+  border-radius: 0px 8px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 250ms linear;
+  &:hover {
+    background: #0a84ff;
+  }
+  &:hover .lection-convas-icon-next {
+    fill: #ffffff;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #d8e1ec;
+  }
+}
+.lection-convas-icon-next {
+  width: 11px;
+  height: 9px;
+  fill: #0a84ff;
+  transform: rotate(-180deg);
+  transition: fill 250ms linear;
 }
