@@ -209,15 +209,36 @@
   }
 }
 .lection-convas-button {
+  position: relative;
   cursor: pointer;
   width: 100%;
   appearance: none;
   border: none;
-  background: #ffffff;
+  background: #e0eaf7;
   border-radius: 8px 8px 0px 0px;
   padding: 16px 12px 16px 24px;
   &:hover .lection-convas-text {
     color: #0a84ff;
+  }
+  &.active {
+    background: #ffffff;
+  }
+}
+.lection-convas-button-input {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  appearance: none;
+  border: none;
+  background: none;
+  padding-left: 24px;
+  &.active {
+    display: flex;
+  }
+  &:focus {
+    outline: none;
   }
 }
 .lection-convas-text {
